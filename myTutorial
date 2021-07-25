@@ -10,7 +10,7 @@
 
 3)Nvim for default
 - in .bashrc export EDITOR=nvim
-- ~/.config/nvim/vim.init
+- ~/.config/nvim/init.vim
 -------------------------------
   1 set number
   2 set termguicolors
