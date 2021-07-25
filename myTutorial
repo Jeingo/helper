@@ -1,0 +1,31 @@
+1)Hoogle:
+- stack install hoogle
+- add in .bashrc "export PATH="$PATH:~/.local/bin""
+- hoogle generate
+- :!hoogle "a -> a"
+
+2)Git-ssh
+- ssh-keygen -t ed25519 -C "jeingo20@gmail.com"
+- ~/.ssh/*.pub copy into Git
+
+3)Nvim for default
+- in .bashrc export EDITOR=nvim
+- ~/.config/nvim/vim.init
+-------------------------------
+  1 set number
+  2 set termguicolors
+  3 set tabstop=4
+  4 set shiftwidth=2
+  5 set smarttab
+  6 set expandtab
+  7 
+  8 syntax on
+  9 
+ 10 call plug#begin('~/.local/share/nvim/site/pack')
+ 11 Plug 'dracula/vim'
+ 12 Plug 'neovimhaskell/haskell-vim'
+ 13 call plug#end()
+ 14 
+ 15 colorscheme dracula
+------------------------------
+- download vim-plug
