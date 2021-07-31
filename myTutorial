@@ -45,3 +45,4 @@ highlight NvimTreeFolderIcon guibg=transparent
 
 ------------------------------
 - download vim-plug
+- install vimdevicons
