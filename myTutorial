@@ -12,20 +12,36 @@
 - in .bashrc export EDITOR=nvim
 - ~/.config/nvim/init.vim
 -------------------------------
-  1 set number
-  2 set termguicolors
-  3 set tabstop=4
-  4 set shiftwidth=2
-  5 set smarttab
-  6 set expandtab
-  7 
-  8 syntax on
-  9 
- 10 call plug#begin('~/.local/share/nvim/site/pack')
- 11 Plug 'dracula/vim'
- 12 Plug 'neovimhaskell/haskell-vim'
- 13 call plug#end()
- 14 
- 15 colorscheme dracula
+set number
+set termguicolors
+set tabstop=4
+set shiftwidth=2
+set smarttab
+set expandtab
+
+syntax on
+ 
+call plug#begin('~/.local/share/nvim/site/pack')
+Plug 'dracula/vim'
+Plug 'morhetz/gruvbox'
+Plug 'tomasr/molokai'
+Plug 'neovimhaskell/haskell-vim'
+Plug 'kyazdani42/nvim-web-devicons' " for file icons
+Plug 'kyazdani42/nvim-tree.lua'
+call plug#end()
+
+colorscheme dracula
+
+set encoding=UTF-8
+
+nnoremap <C-n> :NvimTreeToggle<CR>
+nnoremap <leader>r :NvimTreeRefresh<CR>
+nnoremap <leader>n :NvimTreeFindFile<CR>
+
+set termguicolors " this variable must be enabled for colors to be applied properly
+
+highlight NvimTreeFolderIcon guibg=transparent
+
+
 ------------------------------
 - download vim-plug
