@@ -42,6 +42,8 @@ set termguicolors " this variable must be enabled for colors to be applied prope
 
 highlight NvimTreeFolderIcon guibg=transparent
 
+set clipboard=unnamedplus
+
 
 ------------------------------
 - download vim-plug
