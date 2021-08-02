@@ -12,12 +12,13 @@
 - in .bashrc export EDITOR=nvim
 - ~/.config/nvim/init.vim
 -------------------------------
-set number
+set number relativenumber
 set termguicolors
 set tabstop=4
 set shiftwidth=2
 set smarttab
 set expandtab
+set cursorline
 
 syntax on
  
@@ -28,12 +29,14 @@ Plug 'tomasr/molokai'
 Plug 'neovimhaskell/haskell-vim'
 Plug 'kyazdani42/nvim-web-devicons' " for file icons
 Plug 'kyazdani42/nvim-tree.lua'
+Plug 'vim-airline/vim-airline'
 call plug#end()
 
 colorscheme dracula
 
 set encoding=UTF-8
 
+nnoremap <C-d> :noh<CR>
 nnoremap <C-n> :NvimTreeToggle<CR>
 nnoremap <leader>r :NvimTreeRefresh<CR>
 nnoremap <leader>n :NvimTreeFindFile<CR>
