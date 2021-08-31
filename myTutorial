@@ -7,6 +7,13 @@
 2)Git-ssh
 - ssh-keygen -t ed25519 -C "jeingo20@gmail.com"
 - ~/.ssh/*.pub copy into Git
+- ssh-copy-id root@192.168.0.1
+- in ~/.ssh/ touch config ->
+host test
+  1   hostname 185.119.59.41
+  2   user root
+  3   IdentityFile ~/.ssh/id_ed25519
+
 
 3)Nvim for default
 - in .bashrc export EDITOR=nvim
@@ -51,3 +58,11 @@ set clipboard=unnamedplus
 ------------------------------
 - download vim-plug
 - install vimdevicons
+
+
+4)Vim short
+ - g; | g, | 10j | 10k | f(F) char | w and b | V and ctrl-v | zz |H M L |
+
+
+
+
