@@ -62,6 +62,7 @@ set clipboard=unnamedplus
 
 4)Vim short
  - g; | g, | 10j | 10k | f(F) char | w and b | V and ctrl-v | zz |H M L |
+ :%s/old/new/g  (w) - заменна всех вхождений 
 
 
 
