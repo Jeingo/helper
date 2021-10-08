@@ -65,5 +65,7 @@ set clipboard=unnamedplus
  :%s/old/new/g  (w) - заменна всех вхождений 
 
 
-
+5) Haskell : package.yaml
+ default-extensions:
+  1   - OverloadedStrings
 
